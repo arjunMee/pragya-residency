@@ -16,3 +16,24 @@ navItem.forEach((e)=>{
         nav.classList.remove('nav__toggle');
     })
 }) 
+
+/*===== SWIPER CAROUSEL =====*/ 
+const mySwiper = new Swiper('.swiper-container', {
+    loop: true,
+    grabCursor: true,
+    centeredSlides: true,
+    // effect: 'fade',
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      autoplay: {
+        delay: 1500,
+        disableOnInteraction: false,
+      },
+
+})
