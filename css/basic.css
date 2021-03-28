@@ -108,7 +108,7 @@ textarea{
 
 /* ===== LAYOUT ===== */
 .section {
-    padding: var(--mb-4) 0; 
+    padding: 4rem 0; 
 }
 
 .body__container {
@@ -294,6 +294,65 @@ textarea{
  */
 
  .hostel__container{
-     height: 40vh;
-     background-color: green;
+     height: 450px;
+     color: var(--text-secondry)
+ }
+
+ .slider{
+     display: none;
+ }
+
+ .slider__active{
+     display: block;
+     transition:display 3s ease-in-out;
+ }
+
+ .qualities__container{
+    /* height: 30vh; */
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.788), rgba(0, 0, 0, 0.664)), url('../img/hostel\ \(2\).jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+ }
+
+ .qualities__list{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+ }
+
+ .qualities__item{
+     width:350px;
+     height:300px;
+     padding:1rem 1.2rem;
+     margin: 1rem;
+ }
+
+
+
+
+
+
+
+ .gallery__wrapper{
+    display:grid; 
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap:1rem;
+ }
+
+
+
+
+
+
+
+ .about__container{
+    /* height: 30vh; */
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.788), rgba(0, 0, 0, 0.664)), url('../img/hostel\ \(2\).jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    /* background-attachment: fixed; */
  }

@@ -17,23 +17,36 @@ navItem.forEach((e)=>{
     })
 }) 
 
-/*===== SWIPER CAROUSEL =====*/ 
-const mySwiper = new Swiper('.swiper-container', {
-    loop: true,
-    grabCursor: true,
-    centeredSlides: true,
-    // effect: 'fade',
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-    },
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-      autoplay: {
-        delay: 1500,
-        disableOnInteraction: false,
-      },
+// ===================
+// slider
+// ==================
+let totalSlide = document.getElementsByClassName('slider');
 
+function removeAll(){
+     for(let i=0; i < totalSlide.length; i++){
+        totalSlide[i].classList.remove('slider__active');
+     }
+}
+let current = 0;
+let right = document.getElementById('right').addEventListener('click', function(){
+    removeAll()
+    if(current === totalSlide.length - 1)
+    {
+        current = 0;
+    }else{
+        current++;
+    }
+    totalSlide[current].classList.add('slider__active');
 })
+
+let left = document.getElementById('left').addEventListener('click', function(){
+    removeAll()
+    if(current === 0)
+    {
+        current = totalSlide.length - 1;
+    }else{
+        current--;
+    }
+    totalSlide[current].classList.add('slider__active');
+})
+

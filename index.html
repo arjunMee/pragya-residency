@@ -6,8 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>pragya residency</title>
     <link rel="stylesheet" href="./css/basic.css">
+
+        <!-- ===== BOX ICONS ===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
+
+    <!-- =========================
+                    nav bar
+    ============================= -->
     <nav class="nav__container">
         <div class="nav__content body__container">
             <img src="./svg/PRAGYA RESIDENCY.svg" alt="logo" class="logo">
@@ -27,8 +34,10 @@
         </div>
     </nav>
 
-    <main>
-
+<main>
+        <!-- =========================
+                    header
+        ============================= -->
         <header class="header__container" style="background-color: lightcoral;">
             <div class="body__container header__item">
                 <div class="header__title">
@@ -76,17 +85,189 @@
             </div>
         </header>
 
-        <section class="section">
-                <div class="swiper-container hostel__container" >
-                    <div class="swiper-wrapper" >
-                        <div class="swiper-slide ">
 
-
+        <!-- =========================
+                    hostels details
+        ============================= -->
+        <section class="section body__container">
+                <div class="hostel__container" >
+                    <div style="display: flex; justify-content: space-between;">
+                        <div>
+                            <h3 style="margin: 1rem 0 .5rem; text-transform: uppercase; font-weight: 500;">our hostels</h3>
+                            <button style="background-color: transparent; border: none;">view all -></button>
                         </div>
+                        <div style="display: flex; align-items: start;">
+                            <button id="left" style="margin:0 .4rem; padding: .8rem 1rem; border-radius: 50%; border: none;"><</button>
+                            <button id="right" style="margin:0 .4rem; padding: .8rem 1rem; border-radius: 50%; border: none;">></button>
+                        </div>
+                    </div>
+
+                    <div  style="height:100%;">
+
+                        <div class="slider slider__active">
+                            <div style="display: grid; grid-template-columns: 400px 1fr; column-gap: 3rem; grid-template-rows: 30% 30% 40% 30%;">
+                                <img src="./img/hostel (1).jpeg" alt="" style="max-width:400px; grid-row: 1/-1;">
+                                <h3 style="margin: 1rem 0 .5rem; text-transform: uppercase; font-weight: 500;">pragya residency (boys hostel)</h3>
+                                <div class="facilities__overview" style="display: flex; grid-column:2;">
+                                    <div class="facilities__icon" style="text-align: center; margin-right: 1rem;">
+                                        <i class='bx bx-home' style="font-size: 2.5rem;"></i>
+                                        <p style="font-size: .9rem;">HOME LIKE FEELING</p>
+                                    </div>
+                                    <div class="facilities__icon" style="text-align: center; margin-right: 1rem;">
+                                        <i class='bx bxs-user' style="font-size: 2.5rem;"></i>
+                                        <p style="font-size: .9rem;">2 GUESTS</p>
+                                    </div>
+                                    <div class="facilities__icon" style="text-align: center; margin-right: 1rem;">
+                                        <i class='bx bx-door-open' style="font-size: 2.5rem;"></i>
+                                        <p style="font-size: .9rem;">3 BEDROOMS</p>
+                                    </div>
+                                    <div class="facilities__icon" style="text-align: center; margin-right: 1rem;">
+                                        <i class='bx bx-bed' style="font-size: 2.5rem;"></i>
+                                        <p style="font-size: .9rem;">3 BEDS</p>
+                                    </div>
+                                </div>
+                                <p class="facilities__disciption">Lorem Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam natus ducimus fugit labore odio totam accusantium accusamus nisi voluptas cupiditate. lorem10 ipsum dolor sit amet consectetur adipisicing elit. Ipsa tempora saepe, explicabo tenetur ad quae ea nemo beatae corporis tempore.</p>
+                                <div class="facilities__btn" style="display: flex; justify-content: space-between; align-self: flex-end;">
+                                    <button class="form__btn" style="padding: 1rem 2rem">check details</button>
+                                    <p style="font-weight: 600; margin-right: 1rem;"><i>Start From :</i><span style="margin-left:1rem;">$7000</span></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="slider">
+                            <div style="display: grid; grid-template-columns: 400px 1fr; column-gap: 3rem; grid-template-rows: 30% 30% 40% 30%;">
+                                <img src="./img/hostel (2).jpeg" alt="" style="max-width:400px; grid-row: 1/-1;">
+                                <h3 style="margin: 1rem 0 .5rem; text-transform: uppercase; font-weight: 500;">pragya residency (girls hostel)</h3>
+                                <div class="facilities__overview" style="display: flex; grid-column:2;">
+                                    <div class="facilities__icon" style="text-align: center; margin-right: 1rem;">
+                                        <i class='bx bx-home' style="font-size: 2.5rem;"></i>
+                                        <p style="font-size: .9rem;">HOME LIKE FEELING</p>
+                                    </div>
+                                    <div class="facilities__icon" style="text-align: center; margin-right: 1rem;">
+                                        <i class='bx bxs-user' style="font-size: 2.5rem;"></i>
+                                        <p style="font-size: .9rem;">2 GUESTS</p>
+                                    </div>
+                                    <div class="facilities__icon" style="text-align: center; margin-right: 1rem;">
+                                        <i class='bx bx-door-open' style="font-size: 2.5rem;"></i>
+                                        <p style="font-size: .9rem;">3 BEDROOMS</p>
+                                    </div>
+                                    <div class="facilities__icon" style="text-align: center; margin-right: 1rem;">
+                                        <i class='bx bx-bed' style="font-size: 2.5rem;"></i>
+                                        <p style="font-size: .9rem;">3 BEDS</p>
+                                    </div>
+                                </div>
+                                <p class="facilities__disciption">Lorem Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam natus ducimus fugit labore odio totam accusantium accusamus nisi voluptas cupiditate. lorem10 ipsum dolor sit amet consectetur adipisicing elit. Ipsa tempora saepe, explicabo tenetur ad quae ea nemo beatae corporis tempore.</p>
+                                <div class="facilities__btn" style="display: flex; justify-content: space-between; align-self: flex-end;">
+                                    <button class="form__btn" style="padding: 1rem 2rem">check details</button>
+                                    <p style="font-weight: 600; margin-right: 1rem;"><i>Start From :</i><span style="margin-left:1rem;">$7000</span></p>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
         </section>
-    </main>
+
+
+        <!-- =========================
+                    qualities
+        ============================= -->
+        <section class="qualities__container section" style="background-color: lightcoral;">
+            <div class="body__container" style="display: flex; flex-wrap: wrap;">
+                
+                <div class="qualities__list">
+                    <div class="qualities__item">
+                        <span style="display: inline-block;  border-radius: 50%; padding:1rem; background-color: white;">
+                            <i style="font-size: 4rem; color:#000" class='bx bx-wifi'></i>
+                        </span>
+                        <h3 style="margin:1.3rem 0"><span>WIFI ROOMS</span></h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia qui, nobis officiis necessitatibus quisquam.</p>
+                    </div>
+
+                    <div class="qualities__item">
+                        <span style="display: inline-block;  border-radius: 50%; padding:1rem; background-color: white;">
+                            <i style="font-size: 4rem; color:#000" class='bx bx-bullseye'></i>
+                        </span>
+                        <h3 style="margin:1.3rem 0"><span>MESS FACILITY</span></h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia qui, nobis officiis necessitatibus quisquam.</p>
+                    </div>
+
+                    <div class="qualities__item">
+                        <span style="display: inline-block;  border-radius: 50%; padding:1rem; background-color: white;">
+                            <i style="font-size: 4rem; color:#000" class='bx bx-alarm-exclamation'></i>
+                        </span>
+                        <h3 style="margin:1.3rem 0"><span>24x7 STUDENT</span></h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia qui, nobis officiis necessitatibus quisquam.</p>
+                    </div>
+
+                    <div class="qualities__item">
+                        <span style="display: inline-block;  border-radius: 50%; padding:1rem; background-color: white;">
+                            <i style="font-size: 4rem; color:#000" class='bx bx-wifi'></i>
+                        </span>
+                        <h3 style="margin:1.3rem 0"><span>WIFI ROOMS</span></h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia qui, nobis officiis necessitatibus quisquam.</p>
+                    </div>
+
+                    <div class="qualities__item">
+                        <span style="display: inline-block;  border-radius: 50%; padding:1rem; background-color: white;">
+                            <i style="font-size: 4rem; color:#000" class='bx bx-bullseye'></i>
+                        </span>
+                        <h3 style="margin:1.3rem 0"><span>MESS FACILITY</span></h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia qui, nobis officiis necessitatibus quisquam.</p>
+                    </div>
+
+                    <div class="qualities__item">
+                        <span style="display: inline-block;  border-radius: 50%; padding:1rem; background-color: white;">
+                            <i style="font-size: 4rem; color:#000" class='bx bx-alarm-exclamation'></i>
+                        </span>
+                        <h3 style="margin:1.3rem 0"><span>24x7 STUDENT</span></h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia qui, nobis officiis necessitatibus quisquam.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- =========================
+                    gallery
+        ============================= -->
+        <section class="section">
+            <div class="body__container">
+                <h3 style="margin: 1rem 0 .5rem; text-transform: uppercase; font-size: 1.4rem; color:black">gallery</h3>
+
+                <div class="gallery__wrapper">
+                    <div class="img__container">
+                        <img src="./img/hostel (4).jpeg" alt="">
+                    </div>
+                    <div>
+                        <img src="./img/hostel (4).jpeg" alt="">
+                    </div>
+                    <div>
+                        <img src="./img/hostel (5).jpeg" alt="">
+                    </div>
+                    <div>
+                        <img src="./img/hostel (4).jpeg" alt="">
+                    </div>
+                    <div>
+                        <img src="./img/hostel (5).jpeg" alt="">
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+
+        <!-- =========================
+                    about us
+        ============================= -->
+        <section class="section about__container" style="background-color: lightcoral;">
+            <div class="body__container">
+                <h3 style="margin: 1rem 0 .5rem; text-transform: uppercase; font-size: 1.4rem;">a little about us</h3>
+                <p style="margin:3rem 0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p style="max-width: 750px; margin: 0 auto;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id nam voluptatem autem quidem culpa? Neque, suscipit. Nam ratione saepe est earum ullam. Iusto iste ea, omnis quo obcaecati vitae quos perspiciatis in quae distinctio ut similique unde ipsa nulla velit officiis enim maiores voluptates ducimus quasi aliquid. Suscipit, blanditiis quisquam!</p>
+            </div >
+        </section>
+</main>
 
 
 
