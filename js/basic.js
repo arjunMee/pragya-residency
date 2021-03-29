@@ -50,3 +50,24 @@ let left = document.getElementById('left').addEventListener('click', function(){
     totalSlide[current].classList.add('slider__active');
 })
 
+
+
+const mySwiper1 = new Swiper('.block-2', {
+    loop: true,
+    grabCursor: true,
+    centeredSlides: true,
+    // effect: 'fade',
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      autoplay: {
+        delay: 1500,
+        disableOnInteraction: false,
+      },
+
+})
