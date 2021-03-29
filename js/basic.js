@@ -71,5 +71,4 @@ const mySwiper1 = new Swiper('.block-2', {
         disableOnInteraction: false,
       },
 
->>>>>>> 1c7142e1b97bf03eb4477f50a8b57d7d9b607112
 })
