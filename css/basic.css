@@ -245,9 +245,9 @@ textarea{
 .header__title{
     display: flex;
     align-items: center;
-    width:70%;
+    width:80%;
     padding:3rem 0;
-    border-bottom:15px solid var(--body-first)
+    border-bottom:15px solid var(--body-first);
 }
 
 .header__heading{
@@ -287,13 +287,32 @@ textarea{
     border: none;
 }
 
+.form__input__container{
+    display: flex; 
+    flex-direction: column;
+}
+
 .form__btn{
     background-color: var(--body-secondry);
     border:none;
     color: var(--text-white);
-    padding: var(--mb-1) var(--mb-5)
+    padding: var(--mb-1) var(--mb-5);
+    text-transform: uppercase;
+    border-radius: 5px;
+    transition: background-color .1s ease-in;
 }
 
+.form__btn:hover,
+.form__btn:focus{
+    background-color: rgb(99, 99, 99);
+}
+.main__heading{
+    text-transform: uppercase; 
+    word-spacing: 4px;
+    font-weight: 900;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
 /* ===============================
 
         hostel__container
@@ -303,8 +322,57 @@ textarea{
 
  .hostel__container{
      padding:4rem 0;
-     color: var(--text-secondry)
+     color: var(--text-secondry);
  }
+
+ .hostel__btn__container{
+     display: flex; 
+     justify-content: space-between;
+ }
+
+.hostel__btn__item{
+    display: flex; 
+    align-items: start;
+}
+
+.arrow__btn{
+    margin:0 .4rem; 
+    padding: .8rem 1rem; 
+    border-radius: 50%; 
+    border: none;
+    background-color: var(--body-secondry);
+    color: var(--text-white);
+    font-weight: 900;
+    outline: none;
+}
+
+.arrow__btn:hover,
+.arrow__btn:focus{
+    background-color: rgb(99, 99, 99);
+}
+
+
+.facilities__icon{
+    display: flex; 
+    align-items: center; 
+    margin-right: 1rem;
+}
+
+.facilities__icon i{
+    font-size: 2.5rem; 
+    margin-right: .5rem;
+}
+.facilities__icon p{
+    font-size: .9rem;
+}
+
+.facilities__btn{
+    display: flex; 
+    justify-content: space-between; 
+    align-self: flex-start;
+}
+
+
 
  .slider{
      display: none;
@@ -347,6 +415,7 @@ textarea{
      .header__heading{
         font-size: 2.5rem;
         margin-left: 0;
+        line-height: 1;
     }
     
 .header__title{
@@ -360,7 +429,7 @@ textarea{
 }
 
 .facilities__overview{
-
+    flex-direction: column;
     margin:var(--mb-3) 0;
 }
 
@@ -382,9 +451,14 @@ textarea{
 
 
 
- 
+ /* ===============================
+
+        qualities__container
+
+==================================
+ */
+
  .qualities__container{
-    /* height: 30vh; */
     background:linear-gradient(0deg, rgba(0, 0, 0, 0.788), rgba(0, 0, 0, 0.664)), url('../img/hostel\ \(2\).jpeg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -405,8 +479,21 @@ textarea{
      margin: auto;
  }
 
+ .qualities__item h3{
+    margin:1.3rem 0
+ }
 
+.qualities__icon__container{
+    display: inline-block;  
+    border-radius: 50%; 
+    padding:1rem; 
+    background-color: white;
+}
 
+.qualities__icon__container i{
+    font-size: 4rem; 
+    color:var(--text-black);
+}
 
 
 
@@ -595,5 +682,4 @@ textarea{
     }
 
 }
-
 
