@@ -600,8 +600,3 @@ textarea {
     flex-direction: column;
   }
 }
-
-.showCase__container {
-  display: flex;
-  flex-wrap: wrap;
-}
