@@ -225,7 +225,7 @@ textarea {
       rgba(0, 0, 0, 0.425),
       rgba(80, 72, 77, 0.473)
     ),
-    url('../img/imagefolder/fwdgoodhome/hostal\ \(22\).jpg');
+    url('../img/imagefolder/fwdgoodhome/hostel\ \(22\).jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -437,7 +437,7 @@ textarea {
 
 .qualities__container {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.788), rgba(0, 0, 0, 0.664)),
-    url('../img/imagefolder/fwdgoodhome/hostal\ \(13\).jpg');
+    url('../img/imagefolder/fwdgoodhome/hostel\ \(13\).jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -482,7 +482,7 @@ textarea {
 .about__container {
   /* height: 30vh; */
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.788), rgba(0, 0, 0, 0.664)),
-    url('../img/imagefolder/fwdgoodhome/hostal\ \(7\).jpg');
+    url('../img/imagefolder/fwdgoodhome/hostel\ \(7\).jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
