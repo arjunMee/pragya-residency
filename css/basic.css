@@ -127,7 +127,7 @@ textarea {
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
-  background-color: rgba(0, 0, 0, 0.753);
+  background-color: rgba(224, 224, 224, 0.945);
 }
 
 .logo {
@@ -151,7 +151,7 @@ textarea {
 
 .nav__link {
   text-transform: capitalize;
-  color: inherit;
+  color: black;
 }
 
 .nav__link:hover {
